@@ -7,15 +7,18 @@ class Node {
 
 const getNodeValue = (head, index) => {
   
-  let count = 0
-  let current = head 
-  while (count <= index){
-      if (count === index) return current.val 
-      if (!current.next) return null 
-      current = current.next 
-      count += 1 
-  }
-  return null
+//   let count = 0
+//   let current = head 
+//   while (count <= index){
+//       if (count === index) return current.val 
+//       if (!current.next) return null 
+//       current = current.next 
+//       count += 1 
+//   }
+//   return null
+    if(head === null) return null 
+    if(index === 0) return head.val 
+    return getNodeValue(head.next, index - 1)
 };
 
 const a = new Node("a");
