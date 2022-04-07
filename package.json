@@ -1,0 +1,25 @@
+{
+  "name": "structy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "printList.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiagoDe/Structy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiagoDe/Structy/issues"
+  },
+  "homepage": "https://github.com/ThiagoDe/Structy#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11"
+  }
+}
