@@ -15,6 +15,12 @@ const linkedListFind = (head, target) => {
     return false 
 };
 
+const linkedListFind = (head, target) => {
+    if (!head) return false
+    if (head.val === target) return true 
+    return linkedListFind(head.next, target)
+}
+
 const a = new Node("a");
 const b = new Node("b");
 const c = new Node("c");
