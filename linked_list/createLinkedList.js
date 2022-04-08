@@ -9,15 +9,36 @@ class Node {
 
 const createLinkedList = (values) => {
     let head = new Node(values[0]);
-    let current = head 
+    let current = head // h , e ,
+    let next
     let arr = values.slice(1, values.length);
-    // let next = new Node(arr[0]);
-    for (val of arr){
-        current.next = val;
-        current = val;
+    // console.log(arr)
+    for (let i = 0; i < arr.length; i++){ // e 
+        let val = arr[i]
+        console.log(val)
+        current.next = new Node(val);
+        current = current.next;
     }
+
     return head;
 };
 
-print(createLinkedList(["h", "e", "y"]))
+const createLinkedList2 = (values) => {
+    // let dummyHead = new Node(null);
+    // let current = dummyHead;
+    // for (let val of values){
+    //     current.next = new Node(val)
+    //     current = current.next;
+    // }
+
+    // return dummyHead.next;
+}
+const createLinkedList3 = (values, i = 0) => {
+    if (i === values.length) return null;
+    const head = new Node(values[i]);
+    head.next = createLinkedList3(values, i+1);
+    return head;
+}
+
+print(createLinkedList3(["h", "e", "y"]))
 // h -> e -> y)
