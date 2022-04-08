@@ -12,10 +12,16 @@ const a = new Node("a");
 const b = new Node("b");
 const c = new Node("c");
 const d = new Node("d");
+const e = new Node("e");
+const f = new Node("f");
+const g = new Node("g");
 
 a.next = b;
 b.next = c;
 c.next = d;
+d.next = e;
+e.next = f;
+f.next = g;
 
 // a -> b -> c -> d
 
@@ -46,4 +52,4 @@ const insertNode = (head, value, index) => {
 };
 
 
-print(insertNode(a, 'x', 2)); // a -> b -> x -> c -> d
+print(insertNode(a, 'x', 0)); // a -> b -> x -> c -> d
