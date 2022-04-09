@@ -1,4 +1,4 @@
-const { print } = require('../printList');
+const { print } = require('./printList');
 
 class Node {
   constructor(val) {
