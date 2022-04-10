@@ -1,5 +1,4 @@
 const { Node } = require('./nodeClass');
-const { print } = require('../linked_list/printList');
 
 const a = new Node("a");
 const b = new Node("b");
