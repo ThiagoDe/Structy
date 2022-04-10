@@ -1,10 +1,12 @@
-class Node {
-  constructor(val) {
-    this.val = val;
-    this.left = null;
-    this.right = null;
-  }
-}
+const { Node } = require('./nodeClass')
+
+// class Node {
+//   constructor(val) {
+//     this.val = val;
+//     this.left = null;
+//     this.right = null;
+//   }
+// }
 
 const treeMinValue = (root) => {
     if (root === null) return Infinity;

@@ -1,10 +1,4 @@
-class Node {
-  constructor(val) {
-    this.val = val;
-    this.left = null;
-    this.right = null;
-  }
-}
+const { Node } = require('./nodeClass')
 
 const treeSum = (root) => {
     if (root === null) return 0;
