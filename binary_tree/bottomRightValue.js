@@ -31,7 +31,7 @@ const bottomRightValue = (root) => {
     let rightBottom = root.val 
 
     while (queue.length > 0) {
-        rightBottom = queue[queue.length - 1].val
+        rightBottom = queue[queue.length - 1]
         let current =  queue.shift();
 
         if (current.left) queue.push(current.left);
