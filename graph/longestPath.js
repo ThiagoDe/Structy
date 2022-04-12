@@ -20,6 +20,7 @@ const longestPath = (graph) => {
     return Math.max(...Object.values(distance));
 };
 
+
 const traverseDistance = (graph, node, distance) => {// graph, a:, {c: 0}
     if ( node in distance) return distance[node]; // graph, c:, {c: 0} // 0, 
 
