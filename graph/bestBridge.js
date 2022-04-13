@@ -1,12 +1,10 @@
 const grid = [
-  ["W", "L", "W", "W", "W", "W", "W", "W"],
-  ["W", "L", "W", "W", "W", "W", "W", "W"],
-  ["W", "W", "W", "W", "W", "W", "W", "W"],
-  ["W", "W", "W", "W", "W", "W", "W", "W"],
-  ["W", "W", "W", "W", "W", "W", "W", "W"],
-  ["W", "W", "W", "W", "W", "W", "L", "W"],
-  ["W", "W", "W", "W", "W", "W", "L", "L"],
-  ["W", "W", "W", "W", "W", "W", "W", "L"],
+  ["W", "W", "W", "L", "L"],
+  ["L", "L", "W", "W", "L"],
+  ["L", "L", "L", "W", "L"],
+  ["W", "L", "W", "W", "W"],
+  ["W", "W", "W", "W", "W"],
+  ["W", "W", "W", "W", "W"],
 ];
 const bestBridge = (grid) => {
     let mainIsland;
@@ -32,9 +30,10 @@ const bestBridge = (grid) => {
         const [ r, c , distance ] = queue.shift();
         const pos = r + ',' + c;
         if (grid[r][c] === 'L' && !mainIsland.has(pos)) {
-            return distance -1;
+            return distance - 1;
         }
         const deltas = [[1, 0],[-1, 0], [0, 1], [0, -1] ]
+        
         for (let delta of deltas) {
             const [ deltaRow, deltaCol ] = delta;
             const neighborRow = r + deltaRow;
