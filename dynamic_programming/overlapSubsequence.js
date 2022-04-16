@@ -1,5 +1,6 @@
 const overlapSubsequence = (str1, str2, i = 0, j = 0, memo = {}) => {
     const key = i + ',' + j;
+    if (key in memo) return memo[key];
     if ( i === str1.length  || j === str2.length) return 0;
 
     if (str1[i] === str2[j]) {
