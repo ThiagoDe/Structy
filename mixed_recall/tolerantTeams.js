@@ -2,7 +2,6 @@ const tolerantTeams = (rivalries) => {
     const graph = buildGraph(rivalries);
     const coloring = {};
 
-
     for (let node in graph) {
         if (!(node in coloring) && !isBipartite(graph, node, coloring, false)){
         return false;
