@@ -5,7 +5,6 @@ class Node {
     this.right = null;
   }
 }
-
 const postOrder = (root) => {
     const values = [];
     postOrderTraversal(root, values);
