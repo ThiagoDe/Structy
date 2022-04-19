@@ -1,5 +1,16 @@
 const combineIntervals = (intervals) => {
-    intervals.sort((intervalA, intervalB) => intervalA[0] - intervalB[0])
+    const sortedIntervals = intervals.sort((intervalA, intervalB) => intervalA[0] - intervalB[0])
+    const combined = [ sortedIntervals[0]];
+
+    for (let currentInterval of sortedIntervals.slice(1)){
+        const [ lastStart, lastEnd ] = combined[combined.length - 1];
+        const [ currentStart, currentEnd ] = currentInterval;
+        if ( currentStart <= lastEnd){
+            
+        }
+    }
+
+    return combined;
 }
 
 const intervals = [
