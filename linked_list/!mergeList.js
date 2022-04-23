@@ -52,12 +52,12 @@ const mergeLists = (head1, head2) => {
 
 
 // recursive
-const mergeLists = (head1, head2) => {
+// const mergeLists = (head1, head2) => {
     // if(head1 === null && head2 === null ) return null
     // if(head1) return head2
     // if (head2) return head1 
 
-}
+// }
 
 console.log(mergeLists(a, q));
 // 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> 12 -> 20 -> 25 -> 28 
