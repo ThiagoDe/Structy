@@ -23,7 +23,7 @@ e.next = f;
 removeNode(a, "c");
 // a -> b -> d -> e -> f
 
-const removeNode = (head, targetVal) => {
+const r_removeNode = (head, targetVal) => {
    if (head.val === targetVal) return head.next;
   let current = head;
   let prev = null;
