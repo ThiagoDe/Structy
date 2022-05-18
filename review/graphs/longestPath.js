@@ -21,7 +21,6 @@ const explore = (graph, node, distances) => {
     max = Math.max(max, attempt)
   }
   
-  
   distances[node] = 1 + max;
   return  distances[node];
 }

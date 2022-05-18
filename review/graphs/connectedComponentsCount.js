@@ -6,8 +6,7 @@ const connectedComponentsCount = (graph) => {
    count += traverse(graph, node, visited);
   }
   return count;
-};
-  
+}; 
 
 const traverse = (graph, node, visited) => {
   if (visited.has(String(node))) return 0;
