@@ -18,7 +18,6 @@ c.right = f;
 //   b     c
 //  / \     \
 // d   e     f
-
 const treeLevels = (root) => {
     if (root === null) return [];
     const levels = [];
