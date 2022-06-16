@@ -23,3 +23,4 @@ const anagrams = (s1, s2) => {
 };
 
 console.log(anagrams('restful', 'fluster'))
+console.log('hi I\'m back')
